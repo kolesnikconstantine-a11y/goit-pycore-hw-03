@@ -21,6 +21,6 @@ def get_days_from_today(date):
         print(f"Date {date} does not match format '%Y-%m-%d")
 
 # Функція повертає ціле число, яке вказує на кількість днів від заданої дати до поточної.
-get_days_from_today("2028-12-01")
+get_days_from_today("2028-11-01")
 
 

@@ -6,7 +6,7 @@ def get_numbers_ticket(min, max, quantity):
     if min >= 1 and max <= 1000 and quantity < max and quantity > min:
         # Формування списка numbers, з урахування min та max 
         numbers = []
-        index = 1
+        index = min
         while index <= max:
             numbers.append(index)
             index +=1
@@ -23,7 +23,7 @@ def get_numbers_ticket(min, max, quantity):
 
 
 
-lottery_numbers = get_numbers_ticket(1, 49, 6)
+lottery_numbers = get_numbers_ticket(10, 49, 12)
 print("Ваші лотерейні числа:", lottery_numbers)
 
 

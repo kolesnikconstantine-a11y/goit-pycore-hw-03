@@ -14,13 +14,13 @@ def get_days_from_today(date):
         # Розрахунок різниці між поточною датою та заданою датою.
         days_diff = now - datetime_object
         # Поверненя тільки днів, ігноруючи час (години, хвилини, секунди).
-        print(days_diff.days)
+        return days_diff.days
 
     # Обробка винятка, якщо неправильний формат вхідних даних
     except ValueError:
         print(f"Date {date} does not match format '%Y-%m-%d")
 
 # Функція повертає ціле число, яке вказує на кількість днів від заданої дати до поточної.
-get_days_from_today("2028-11-01")
-
+res = get_days_from_today("2028-11-01")
+print(res)
 
